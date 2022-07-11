@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="ag_viagem.css">
+
+  <title>AGENCIA DE VIAGEM DA VAL</title>
+</head>
+
+<body>
+
+  <!-- Bootstrap navbar -->
+
+  <div id="fundo">
+
+    <!--inicio container do topo-->
+    <div class="container">
+
+
+
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="IMAGENS_AG/logo-val.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destino.html">Destino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+               <!--<a class="nav-link" href="login.html">Login</a>-->
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--modal login-->
+<div class="modal" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Faça aqui seu login</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      
+<!--imput-->
+
+<div class="d-grid gap-2">
+<button class="btn btn-light" type="button">Entrar com a conta do Google</button>
+</div>
+<br>
+<div class="form-floating mb-3">
+<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+<label for="floatingInput">Email </label>
+</div>
+<div class="form-floating">
+<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+<label for="floatingPassword">Senha</label>
+</div>
+<div class="modal-footer">       
+<button type="button" class="btn btn-primary">Entrar</button>
+</div>
+<!--fim imput-->
+<a href="#">Esqueceu sua senha?</a>
+<p>Não possui conta? <a href="#"> Criar uma conta.</a>
+
+    </div>
+    
+  </div>
+</div>
+</div>
+<!--fim modal login-->
+
+      <!-- Bootstrap Fim navbar -->
+
+      <div id="texto-tp" class="p-0">
+
+        <h1> Melhores pacotes para <br> experiências incriveis!</h1>
+        <h2> Vem conhecer!</h2>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--fim container do topo-->
+
+  <br>
+
+  <!--inicio container do corpo da pagina-->
+  <div class="container">
+
+    <!--inicio formulario destino-->
+    <div id="formulario">
+      <form action="/action_page.php">
+        <label for="texto"> Qual seu destino:</label>
+        <input type="text" id="texto">
+        <label for="ida">Data de ida:</label>
+        <input type="date" id="ida">
+        <label for="volta">Data de volta:</label>
+        <input type="date" id="volta">
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    <br><br>
+    <!--fim formulario destino-->
+<br>
+    <h2>Promoções para sua viagem   </h2>
+    <br>
+    <!--separação das colunas-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Column
+          <!--imagem de fundo-->
+          <div class="card bg-dark text-white">
+            <img src="IMAGENS_AG/cachoeira-grande-serra-do-cipo-MG.jpg" class="card-img" alt="..." height="270px">
+            <div class="card-img-overlay img-escurecer">
+              <h5 class="card-title">SERRA DO CIPÓ</h5>
+              <p class="card-text">Cachoeira Grande</p>
+              <br><br><br><br>
+              <p class="card-text" style='text-align:right'> Apenas <span style="font-size: 50px;">R$ 559,00</span></p>
+            </div>
+          </div>
+          <!--fim imagem de fundo-->
+
+        </div>
+        <div class="col">
+          Column
+          <!--imagem de fundo-->
+          <div class="card bg-dark text-white">
+            <img src="IMAGENS_AG/H-Igreja de São Francisco de Assis e Igreja de Nossa Senhora do Carmo, em Mariana"
+              class="card-img img-escurecer" alt="..." height="270px">
+            <div class="card-img-overlay img-escurecer">
+              <h5 class="card-title">MARIANA</h5>
+              <p class="card-text">Igreja de São Francisco de Assis e <br> Igreja de Nossa Senhora do Carmo.</p>
+              <br><br><br>
+              <p class="card-text" style='text-align:right'> Apenas <span style="font-size: 50px;">R$ 499,00</span></p>
+            </div>
+          </div>
+          <!--fim imagem de fundo-->
+        </div>
+        <div class="col">
+          Column
+          <!--imagem de fundo-->
+          <div class="card bg-dark text-white">
+            <img src="IMAGENS_AG/BH-MG.jpg" class="card-img" alt="..." height="270px">
+            <div class="card-img-overlay">
+              <h5 class="card-title">BELO HORIZONTE</h5>
+              <p class="card-text">Igreja Pampulha.</p>
+              <br><br><br><br>
+              <p class="card-text" style='text-align:right'> Apenas <span style="font-size: 50px;">R$ 500</span></p>
+            </div>
+          </div>
+          <!--fim imagem de fundo-->
+        </div>
+      </div>
+      <br><br><br>
+      <!--outra coluna-->
+      <div class="row">
+
+        <div class="col">
+          Column
+          <!--card 1-->
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMAGENS_AG/pact-brumadinho.jpg" class="card-img-top" alt="..."height="125px">
+                <div class="card-body">
+                  <h5 class="card-title">Brumadinho</h5>
+                  <br><br>
+                  <p class="card-text">Pacotes a partir de: <span>R$489,00</span>.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Até 12x sem juros</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMAGENS_AG/pact-grão mogol.jpg" class="card-img-top" alt="..." height="125px">
+                <div class="card-body">
+                  <h5 class="card-title">Grão Mogol</h5>
+                  <br><br>
+                  <p class="card-text">Pacotes a partir de: <span>R$499,00</span>.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Até 12x sem juros</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMAGENS_AG/pact-sacramento.jpg" class="card-img-top" alt="..." height="125px">
+                <div class="card-body">
+                  <h5 class="card-title">Sacramento</h5>
+                  <br><br>
+                  <p class="card-text">Pacotes a partir de: <span>R$569,00</span></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Até 12x sem juros</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fim card 1-->
+        </div>
+        <div class="col">
+          Column
+          <!-- texto card 1-->
+          <h3>Pacotes</h3>
+          <p>Promoções imperdiveis</p>
+          <h1>Uma seleção de pacotes para suas próximas férias
+          </h1>
+          <!-- fim texto card 1-->
+
+        </div>
+      </div>
+      <br><br><br>
+      <!--outra coluna-->
+      <div class="row">
+        <div class="col">
+          Column
+             <!-- texto card 2-->
+             <h3>Hospedagens</h3>
+             <p>Aproveite nossas ofertas</p>
+             <h1>Encontre a hospedagem perfeita com os melhores preços
+            </h1>
+            <!-- fim texto card 2-->
+        </div>
+        <div class="col">
+          Column
+          <!--card 2-->
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMAGENS_AG/hosp- bh.jpg" class="card-img-top" alt="..." height="125px">
+                <div class="card-body">
+                  <h5 class="card-title">Belo Horizonte</h5>
+                  <p class="card-text"> Hotel Fenix <br><br><br> Diarias apartir de: <h4>R$129,00</h4> </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"> Até 5x sem juros</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMAGENS_AG/hosp-serra do cipo.jpg" class="card-img-top" alt="..." height="125px">
+                <div class="card-body">
+                  <h5 class="card-title">Serra do Cipó</h5>
+                  <p class="card-text">Hotel Lotus <br><br><br>Diarias apartir de: <h4>R$99,00</h4>.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Até 5x sem juros</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="IMAGENS_AG/hosp-ouro preto.jpg" class="card-img-top" alt="..." height="125px">
+                <div class="card-body">
+                  <h5 class="card-title">Ouro Preto</h5>
+                  <p class="card-text">Hotel Omega <br><br><br>Diarias apartir de: <h4>R$109,00</h4></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Até 5x sem juros</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fim card 2-->
+        </div>
+      </div>
+
+  
+      <!--separação das colunas-->
+
+
+
+    </div>
+    <!--fim container do corpo da pagina-->
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

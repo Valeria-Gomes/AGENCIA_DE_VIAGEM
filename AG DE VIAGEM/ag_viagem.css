@@ -1,0 +1,28 @@
+#fundo {
+background-image:
+url(IMAGENS_AG/Capa-Minas-Gerais\ ok.jpg) ;
+height:500px;
+width: 100%; 
+
+}
+
+.img-escurecer {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.img-fluid{
+max-width: 150px;
+
+}
+
+#texto-tp{
+    text-align: right; 
+
+}
+
+
+#formulario{
+    text-align: center;
+
+
+}

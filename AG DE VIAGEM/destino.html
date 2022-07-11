@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="ag_viagem.css">
+
+  <title>AGENCIA DE VIAGEM DA VAL</title>
+</head>
+
+<body>
+
+  <!-- Bootstrap navbar -->
+
+  <div id="fundo">
+
+    <!--inicio container do topo-->
+    <div class="container">
+
+
+
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="IMAGENS_AG/logo-val.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Destino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promoções.html">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <!--<a class="nav-link" href="login.html">Login</a>-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Login
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--modal login-->
+<div class="modal" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Faça aqui seu login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+<!--imput-->
+
+<div class="d-grid gap-2">
+  <button class="btn btn-light" type="button">Entrar com a conta do Google</button>
+</div>
+<br>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email </label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Senha</label>
+</div>
+<div class="modal-footer">       
+  <button type="button" class="btn btn-primary">Entrar</button>
+</div>
+<!--fim imput-->
+<a href="#">Esqueceu sua senha?</a>
+<p>Não possui conta? <a href="#"> Criar uma conta.</a>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--fim modal login-->
+
+      <!-- Bootstrap Fim navbar -->
+
+      <div id="texto-tp" class="p-0">
+
+        <h1> A cada canto uma <br> história para contar!</h1>
+        <h2> Venha conhecer cada cantinho de Minas Gerais.</h2>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--fim container do topo-->
+
+  <br>
+
+  <!--inicio container do corpo da pagina-->
+  <div class="container">
+
+    <!--inicio formulario destino-->
+    <div id="formulario">
+      <form action="/action_page.php">
+        <label for="texto"> Qual seu destino:</label>
+        <input type="text" id="texto">
+        <label for="ida">Data de ida:</label>
+        <input type="date" id="ida">
+        <label for="volta">Data de volta:</label>
+        <input type="date" id="volta">
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    <br><br>
+    <!--fim formulario destino-->
+<h1>Destinos mais visitados</h1>
+<br>
+<h2>Cachoeiras</h2>
+    <!--inicio card imagem-->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="IMAGENS_AG/Cachoeira das Irmãs – Araguari - MG.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cachoeira das Irmãs – Araguari - MG</h5>
+            <p class="card-text">É também conhecida como Cachoeira das Freiras. A Cachoeiras das Irmãs fica a apenas 36 km de Uberlândia - MG, nas redondezas da cidade são encontradas dezenas de cachoeiras. Suas águas são formadas pelo Ribeirão Bom Jardim e sua queda é de 42 metros de altura. O volume de água é tamanho que forma um spray quando a água atinge o poção. A Cachoeira das Freiras é de fácil acesso, se você quiser sossego, evite visitá-la em feriados e finais de semana de muito calor. <br>
+
+              Altura da Cachoeira das Irmãs: 42 metros <br>
+              
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="IMAGENS_AG/Cachoeira do Crioulo – Parque Estadual do Rio Preto - MG.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Cachoeira do Crioulo – Parque Estadual do Rio Preto - MG</h5>
+            <p class="card-text">Com prainha de areia branca, águas cor de mel e uma queda de água de pouco volume, a Cachoeira do Crioulo é muito convidativa para um bom mergulho. Ela é um dos principais atrativos do Parque Estadual do Rio Preto, na região de Diamantina – MG. O Parque abriga diversas cachoeiras, piscinas naturais, corredeiras e praias fluviais.<br>
+
+              Altura da Cachoeira dou Crioulo: 30 metros<br>
+              
+             </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="IMAGENS_AG/Cachoeira do Fundão – Serra da Canastra - MG.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cachoeira do Fundão – Serra da Canastra - MG</h5>
+            <p class="card-text">TUma das mais belas e paradisíacas cachoeiras da Serra da Canastra. A Cachoeira do Fundão é formada pelas águas cristalinas do Rio Santo Antônio que despescam com bastante força, chegando a formar ondas no poço. Ela está a 52 km de distância de São Roque de Minas, o principal município da região da Canastra. A cachoeira recebe sol quase o dia todo, sendo bastante comum ver arco-íris em torno de sua cortina d’água.<br>
+
+              Altura da Cachoeira do Fundão: 80 metros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <!--OURO CARD-->
+    <br>
+    <h2>Cidades históricas</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="IMAGENS_AG/H- Cidade histórica de Ouro Preto, Minas Gerais" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Ouro Preto</h5>
+            <p class="card-text"> A antiga Vila Rica é prova viva dos tempos em que o ouro ditava as regras, os intelectuais tramavam a Inconfidência Mineira e Aleijadinho demonstrava sua genialidade através da talha e da escultura. Para comprovar isso tudo, será preciso subir e descer ladeira como nunca! No entanto, garantimos que o fascínio causado pelo casario histórico de Ouro Preto como um todo, em especial as igrejas e os museus, vão compensar o esforço físico. Sem falar no Festival de Inverno que ocorre todos os anos. As ruas e espaços são tomados pela arte, com muita interação com o público.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="IMAGENS_AG/H- Conjunto Arquitetônico da Pampulha, em Belo Horizonte" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Belo Horizonte</h5>
+            <p class="card-text">Se engana quem pensa que a capital do estado está reduzida apenas ao papel de porta de entrada para as cidades históricas de Minas Gerais. Há muito o que fazer em Belo Horizonte. Os oito museus ao redor da Praça da Liberdade nos aproximam da cultura e da arte do estado, assim como o Conjunto Arquitetônico da Pampulha, projetado por Oscar Niemeyer. A gastronomia mineira, em especial a infinidade de queijos, deve ser provada no Mercado Central. E o cair da tarde, em qualquer esquina, serve para comprovar o título de capital nacional do boteco.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="IMAGENS_AG/H- Igreja Matriz de Santo Antônio, no centro de Diamantina" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Diamantina</h5>
+            <p class="card-text">O bem preservado centro histórico de Diamantina continua a ser testemunho da riqueza proporcionada pela extração de diamantes nos séculos 17 e 18. Quem vem à terra natal de Juscelino Kubitschek pode aproveitar também outros atrativos, como as belezas naturais da Serra do Espinhaço, em especial o Parque do Biribiri. Prefira vir na época da Vesperata, quando a cidade toda aprecia os concertos musicais que ganham vida nas sacadas dos casarões.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--fim card imagem-->
+
+
+
+
+
+
+  </div>
+  <!--fim container do corpo da pagina-->
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
